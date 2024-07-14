@@ -1,0 +1,22 @@
+.edit-profile-button {
+    margin: -35px 0px 10px 8px; /* Adjust as needed for vertical positioning */
+    padding: 10px 15px; /* Adjust padding to fit text, use same value on left and right */
+    height: 43px;
+    width: 110px; /* Let width adjust based on content */
+    position: relative;
+    top: 50px; /* Adjust for vertical positioning */
+    left: 235px; /* Adjust for horizontal positioning */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap; /* Prevent text wrapping */
+    line-height: 1.5; /* Adjust line height for vertical alignment */
+    display: inline-block; /* Ensure it's treated as an inline element for text */
+  }
+  
+  .edit-profile-button:hover {
+    background-color: #0056b3;
+  }
+  

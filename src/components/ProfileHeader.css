@@ -1,0 +1,35 @@
+/* src/components/ProfileHeader.css */
+.profile-header {
+    position: relative;
+    width: 110%;
+    height: 200px;
+    
+  }
+
+  
+  .header-background {
+    width: 57%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(173, 216, 230, 1) 0%, rgba(135, 206, 250, 1) 100%);
+    border-radius: 8px;
+  }
+  
+  .profile-pic {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .profile-details hr {
+    margin: 20px 0; /* Adjust margin as needed */
+    border: none; /* Remove default border */
+    border-top: 2px solid #ddd; /* Add custom border styles */
+    width: 300%; /* Set the width to 100% */
+  }
+  

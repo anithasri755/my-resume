@@ -1,0 +1,34 @@
+.recent-activities {
+    flex: 3; /* Increase flex-grow to occupy more space in a flex container */
+    position: absolute; /* Position the element absolutely */
+    right: 640px; /* Align to the left edge */
+    padding: 30px; /* Increased padding to enlarge the box */
+    border: 2px solid #ddd; /* Border width remains the same */
+    border-radius: 8px; /* Optional: keeps rounded corners */
+    background: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Increased shadow for more emphasis */
+    position: relative;
+    top: -230px; /* Adjust this as necessary for vertical positioning */
+    height: 730px; /* Allow height to adjust to content */
+    min-width: 440px; /* Ensure a minimum width */
+  
+  }
+  
+  .recent-activities h3 {
+    margin-bottom: 10px;
+  }
+  
+  .recent-activities ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .recent-activities li {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 15px; /* Increase padding for more space within each item */
+    border-radius: 5px;
+  }
+  
+  
