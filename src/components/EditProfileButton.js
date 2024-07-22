@@ -1,9 +1,7 @@
 // src/components/EditProfileButton.js
 import React from 'react';
 import './EditProfileButton.css';
-import EditIcon from '@mui/icons-material/Edit';  // Import the Material-UI Edit icon
-
-
+import EditIcon from '@mui/icons-material/Edit';  
 const EditProfileButton = () => {
   return (
     <button className="edit-profile-button">
@@ -11,5 +9,5 @@ const EditProfileButton = () => {
     </button>
   );
 };
-
 export default EditProfileButton;
+

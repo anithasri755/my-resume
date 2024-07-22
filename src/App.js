@@ -1,4 +1,4 @@
-// src/App.js
+
 import React from 'react';
 import ProfileHeader from './components/ProfileHeader';
 import ProfileDetails from './components/ProfileDetails';
@@ -20,6 +20,5 @@ function App() {
     </div>
   );
 }
-
 export default App;
 

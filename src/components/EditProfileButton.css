@@ -4,19 +4,51 @@
     height: 43px;
     width: 110px; /* Let width adjust based on content */
     position: relative;
-    top: 50px; /* Adjust for vertical positioning */
-    left: 235px; /* Adjust for horizontal positioning */
+    top: 53px; /* Adjust for vertical positioning */
+    left: 320px; /* Adjust for horizontal positioning */
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    text-transform: none; /* Keeps the button text as 'Edit Profile' */
     white-space: nowrap; /* Prevent text wrapping */
-    line-height: 1.5; /* Adjust line height for vertical alignment */
-    display: inline-block; /* Ensure it's treated as an inline element for text */
+    line-height: 1.5; 
+    display: inline-block; 
   }
   
   .edit-profile-button:hover {
     background-color: #0056b3;
   }
+
+  /* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+  .edit-profile-button {
+    top: 40px; /* Adjust for vertical positioning */
+    left: 180px; /* Adjust for horizontal positioning */
+    width: auto; /* Allow width to adjust based on content */
+  }
+}
+
+@media (max-width: 768px) {
+  .edit-profile-button {
+    top: 30px; /* Adjust for vertical positioning */
+    left: 100px; /* Adjust for horizontal positioning */
+    padding: 8px 12px; /* Adjust padding */
+    height: 40px; /* Adjust height */
+    width: auto; /* Allow width to adjust based on content */
+    font-size: 12px; /* Adjust font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .edit-profile-button {
+    top: -360px;
+    left: 750px; /* Adjust for horizontal positioning */
+    padding: 6px 10px; /* Adjust padding */
+    height: 35px; /* Adjust height */
+    width: auto; /* Allow width to adjust based on content */
+    font-size: 10px; /* Adjust font size */
+  }
+}
   

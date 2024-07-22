@@ -1,5 +1,5 @@
-// src/components/ProfileDetails.js
 import React, { useState } from 'react';
+import Grid from '@mui/material/Grid';
 import './ProfileDetail.css';
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIcon from '@mui/icons-material/Phone';
@@ -20,32 +20,48 @@ const ProfileDetails = () => {
   });
 
   return (
-    <div className="profile-details">
-      <h2>{profile.name}</h2>
-      <p><span role="img" aria-label="flag">{profile.location}</span></p>
-      <p>Age: {profile.age} | Gender: {profile.gender} | Status: <span className="status-active">{profile.status}</span></p>
-      <div className="profile-item">
-        <WorkIcon className="icon-style" />
-        <strong>Role:</strong>
-        <span className="space">{profile.role}</span>
-      </div>
-      <div className="profile-item">
-        <EmailIcon className="icon-style" />
-        <strong>Email:</strong>
-        <span className="space">{profile.email}</span>
-      </div>
-      <div className="profile-item">
-        <PhoneIcon className="icon-style" />
-        <strong>Contact:</strong>
-        <span className="space">{profile.contact}</span>
-      </div>
-      <div className="profile-item">
-        <LinkedInIcon className="icon-style" />
-        <strong>LinkedIn:</strong>
-        <span className="space">{profile.linkedIn}</span>
-      </div>
-      <hr />
-    </div>
+    <Grid container spacing={2} className="profile-details">
+      <Grid item xs={12}>
+        <h2>{profile.name}</h2>
+      </Grid>
+      <Grid item xs={12}>
+        <p><span role="img" aria-label="flag">{profile.location}</span></p>
+      </Grid>
+      <Grid item xs={12}>
+        <p>Age: {profile.age} | Gender: {profile.gender} | Status:  <span className="status-active">{profile.status}</span></p>
+      </Grid>
+      <Grid item xs={12}>
+        <div className="profile-item">
+          <WorkIcon className="icon-style" />
+          <strong>Role:</strong>
+          <span className="space">{profile.role}</span>
+        </div>
+      </Grid>
+      <Grid item xs={12}>
+        <div className="profile-item">
+          <EmailIcon className="icon-style" />
+          <strong>Email:</strong>
+          <span className="space">{profile.email}</span>
+        </div>
+      </Grid>
+      <Grid item xs={12}>
+        <div className="profile-item">
+          <PhoneIcon className="icon-style" />
+          <strong>Contact:</strong>
+          <span className="space">{profile.contact}</span>
+        </div>
+      </Grid>
+      <Grid item xs={12}>
+        <div className="profile-item">
+          <LinkedInIcon className="icon-style" />
+          <strong>LinkedIn:</strong>
+          <span className="space">{profile.linkedIn}</span>
+        </div>
+      </Grid>
+      <Grid item xs={12}>
+        <hr />
+      </Grid>
+    </Grid>
   );
 };
 

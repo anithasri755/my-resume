@@ -1,5 +1,6 @@
-// src/components/ProfileHeader.js
+
 import React from 'react';
+
 import './ProfileHeader.css';
 import profilePic from '../assets/T01054SFSAG-U040PMXH1GC-0248e38ebc2c-512.jpg';
 
@@ -11,5 +12,6 @@ const ProfileHeader = () => {
     </div>
   );
 };
+
 
 export default ProfileHeader;

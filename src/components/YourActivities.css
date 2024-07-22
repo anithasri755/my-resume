@@ -1,43 +1,197 @@
-/* src/components/YourActivities.css */
+
 .your-activities {
-    padding: 325px; /* Adjust padding as needed */
+    padding: 370px; 
     position: relative;
-    right: 940px; /* Adjust value to move content left */
+    right: 810px; 
   }
   
   .your-activities h3 {
-    margin: 0 0 5px 0; /* Reduced margin to add a bit of space after the heading */
-    font-size: 1.2em; /* Adjust font size if necessary */
+    margin-top: 20px;
+    font-size: 1.2em; 
+    margin-bottom: 26px;
+    white-space: nowrap; /* Prevents line break */
+
   }
   
   .profile-item1 {
     display: flex;
-    justify-content: space-between; /* Space between elements */
+    justify-content: space-between; 
     margin-bottom: 26px;
   }
   
   .profile-item1 strong {
-    flex: 0 0 auto; /* Keeps the label from stretching */
-    width: 170%; /* Width for consistent alignment */
-    text-align: left; /* Align text to the left */
+    flex: 0 0 auto; 
+    width: 170%;
+    text-align: left; 
   }
   
   .space1 {
-    flex: 0 0 auto; /* Keeps the value from stretching */
-    width: 100%; /* Width for consistent alignment */
-    text-align: left; /* Align text to the right */
+    flex: 0 0 auto;
+    width: 100%; 
+    text-align: left; 
+    flex-grow: 1;
+    margin-left: -40px;
   }
   
-  
   .activity-time {
-    font-size: 0.8em; /* Reduced font size */
+    font-size: 0.8em; 
     color: gray;
   }
   
   .your-activities hr {
-    margin: 40px 0;  /* Adjust margin as needed */
-    border: none; /* Remove default border */
-    border-top: 2px solid #ddd; /* Add custom border styles */
-    width: 600%; /* Set the width to 100% */
+    margin: 40px 0;  
+    border: none; 
+    border-top: 2px solid #ddd; 
+    width: 600%; 
+    margin-bottom: 26px;
   }
-  
+
+
+
+/* Media Queries */
+
+/* For mobile devices (phones and small tablets) */
+@media (max-width: 767px) {
+  .your-activities {
+      padding: 20px;
+      right: 0;
+  }
+
+  .profile-item1 {
+      flex-direction: column;
+  }
+
+  .profile-item1 strong {
+    width: 100%;
+}
+
+.space1 {
+    width: 100%;
+    margin-left: 0;
+}
+
+
+  .your-activities hr {
+      width: 100%;
+      margin: 20px 0;
+  }
+}
+
+/* For tablets and small desktops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .your-activities {
+      padding: 50px;
+      right: 0;
+  }
+
+  .profile-item1 strong {
+    width: 100%;
+}
+
+.space1 {
+    width: 100%;
+    margin-left: 0;
+}
+
+ 
+
+  .your-activities hr {
+      width: 100%;
+      margin: 30px 0;
+  }
+}
+
+/* For larger screens (large desktops and up) */
+@media (min-width: 1025px) {
+  .your-activities {
+      padding: 370px; 
+      right: 800px; 
+  }
+
+  .profile-item1 strong {
+      width: 170%;
+  }
+
+  .your-activities hr {
+      width: 600%;
+      margin: 40px 0;
+  }
+}
+
+/* For very small mobile devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .your-activities {
+    top: -57px;
+    right: 45px;
+  }
+
+  .profile-item1 {
+      flex-direction: column;
+  }
+
+  .profile-item1 strong {
+    width: 100%;
+}
+
+.space1 {
+    width: 100%;
+    margin-left: 130px;
+    position: relative;
+    top: -19px;
+}
+
+
+  .your-activities hr {
+      width: 150%;
+      margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .your-activities {
+    top: -57px;
+    right: 20px;
+  }
+
+  .profile-item1 {
+      flex-direction: column;
+      margin-bottom: 20px;
+  }
+
+  .profile-item1 strong {
+    width: 100%;
+    
+}
+
+.space1 {
+    width: 100%;
+    margin-left: 130px;
+    position: relative;
+    top: -19px;
+}
+
+
+  .your-activities hr {
+      width: 150%;
+      margin: 10px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

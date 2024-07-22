@@ -1,21 +1,20 @@
 .recent-activities {
-    flex: 3; /* Increase flex-grow to occupy more space in a flex container */
-    position: absolute; /* Position the element absolutely */
-    right: 640px; /* Align to the left edge */
-    padding: 30px; /* Increased padding to enlarge the box */
-    border: 2px solid #ddd; /* Border width remains the same */
-    border-radius: 8px; /* Optional: keeps rounded corners */
+    flex: 3; 
+    position: absolute; 
+    right: 520px; 
+    padding: 30px; 
+    border-radius: 8px; 
     background: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); /* Increased shadow for more emphasis */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); 
     position: relative;
-    top: -230px; /* Adjust this as necessary for vertical positioning */
-    height: 730px; /* Allow height to adjust to content */
-    min-width: 440px; /* Ensure a minimum width */
-  
+    top: -206px; 
+    height: 775px; 
+    min-width: 520px;
+
   }
   
   .recent-activities h3 {
-    margin-bottom: 10px;
+    margin-bottom: 30px;
   }
   
   .recent-activities ul {
@@ -27,8 +26,125 @@
     background: #f9f9f9;
     border: 1px solid #ddd;
     margin-bottom: 10px;
-    padding: 15px; /* Increase padding for more space within each item */
+    padding: 15px; 
     border-radius: 5px;
   }
-  
-  
+
+/* Media Queries */
+
+/* For tablets and small desktops */
+@media (max-width: 1024px) {
+  .recent-activities {
+    right: 40px;
+    top: -230px;
+    min-width: 300px;
+  }
+}
+
+/* For large smartphones and tablets in portrait mode */
+@media (max-width: 768px) {
+  .recent-activities {
+    right: 20px;
+    top: -200px;
+    min-width: 280px;
+    padding: 20px;
+  }
+}
+
+/* For small smartphones */
+@media (max-width: 480px) {
+  .recent-activities {
+    position: static;
+    margin: 0 auto;
+    top: 0;
+    min-width: 290%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .recent-activities h3 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+
+  .recent-activities li {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
+
+/* For very small mobile devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .recent-activities {
+    margin: 0 auto;
+    position: relative;
+    top: -88px;
+    min-width: 70%;
+    height: auto;
+    padding: 50px;
+  }
+
+  .recent-activities h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+
+  .recent-activities li {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+}
+
+/* For macOS and Windows large screens */
+@media only screen and (min-width: 1025px) {
+  .recent-activities {
+    right: 520px;
+    top: -206px;
+    min-width: 520px;
+    height: 775px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .recent-activities {
+    margin: 0 auto;
+    position: relative;
+    top: -88px;
+    min-width: 90%;
+    height: auto;
+    padding: 40px;
+  }
+
+  .recent-activities h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+
+  .recent-activities li {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .recent-activities {
+    margin: 0 auto;
+    position: relative;
+    top: -88px;
+    min-width: 90%;
+    height: auto;
+    padding: 50px;
+  }
+
+  .recent-activities h3 {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+  }
+
+  .recent-activities li {
+    padding: 10px;
+    font-size: 0.8em;
+  }
+}
+
+

@@ -1,40 +1,30 @@
-/* src/App.css */
 .App {
   font-family: Arial, sans-serif;
-  max-width: 1700px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 17px;
 }
-
 .profile-container {
   display: flex;
-  flex-direction: column; /* Default to column for mobile view */
-  align-items: center; /* Center align items in column layout */
+  flex-direction: column;
+  align-items: center;
 }
-
 .profile-container > div {
   flex: 1;
-  margin: 30px;
-  width: 100%; /* Ensure items take full width in column layout */
 }
-
-/* Media query for tablets and larger screens */
 @media (min-width: 768px) {
   .profile-container {
-    flex-direction: row; /* Switch to row layout */
+    flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the start in row layout */
+    align-items: flex-start;
   }
-
   .profile-container > div {
-    margin: 15px; /* Reduce margin for larger screens */
-    width: auto; /* Reset width to auto for row layout */
+    margin: 15px;
+    width: auto;
   }
 }
-
-/* Media query for larger desktops */
 @media (min-width: 1200px) {
   .profile-container > div {
-    margin: 30px; /* Restore original margin for larger screens */
+    margin: 0px;
   }
 }

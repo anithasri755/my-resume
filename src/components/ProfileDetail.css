@@ -1,68 +1,169 @@
-/* src/components/ProfileDetails.css */
+
 .profile-details {
-    padding:7px;
-  }
+  padding: 0px;
   
+}
   .profile-details h2 {
     margin: 0;
+    
   }
   
   .profile-details p {
-    margin: 20px 0;
-  }
-  .profile-item {
     display: flex;
-    align-items: center;
-    margin-bottom: 50px;
+    margin: 5px 0;
+    flex-wrap: wrap;
+   align-items: center;
   }
+
+  
 
 .icon-style {
   margin-right: 13px;
   vertical-align: middle;
-  font-size: 20px;
+  font-size: 9px;
 }
   
   .profile-item strong {
     flex: 0 0 auto;
-    margin-right: 130px; /* Adds space between label and email */
+    margin-right: 130px; 
   }
   .profile-item {
-    display: flex;        /* Enable flexbox layout */
-    align-items: center;  /* Align items vertically in the center */
-    margin-bottom: 20px;  /* Space between each item ***/
+    display: flex;       
+    align-items: center;  
+    margin-bottom: 6px;  
 }
 
 .profile-item strong {
-    width: 100px;         /* Fixed width for the labels */
-    text-align: left;     /* Align text to the left */
+    width: 100px;        
+    text-align: left;    
 }
 
 .profile-item .space {
-    flex: 1;              /* Take up the remaining space */
-    text-align: left;     /* Align text to the left */
+    flex: 1;              
+    text-align: left;     
 }
   
- 
 .space {
-  flex: 0 0 auto; /* Keeps the value from stretching */
-  width: 80%; /* Width for consistent alignment */
-  text-align: left; /* Align text to the right */
+  flex: 0 0 auto; 
+  width: 80%; 
+  text-align: left; 
   flex-grow: 1;
   margin-left: 3px;
 }
 
-  
-  
   .status-active {
     color: green;
     font-weight: bold;
+    margin-left: 5px;
+    position: relative;
+    margin-left: 5px;
+    top: 0px;
+    width: 18px;
+
   }
 
   .profile-details hr {
-    margin: 20px 0;  /* Adjust margin as needed */
+    margin: 1px 0;  /* Adjust margin as needed */
     border: none; /* Remove default border */
     border-top: 2px solid #ddd; /* Add custom border styles */
     width: 300%; /* Set the width to 100% */
   }
+
+  .profile-details {
+    padding: 20px;
+  }
+  
+  /* For small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+    .profile-details {
+      padding: 10px;
+    }
+    .profile-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .icon-style {
+      margin-bottom: 5px;
+    }
+    .space {
+      margin-left: 0;
+    }
+  }
+  
+  /* For medium devices (tablets, 768px and down) */
+  @media only screen and (max-width: 768px) {
+    .profile-details {
+      padding: 15px;
+    }
+    .profile-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .icon-style {
+      margin-bottom: 5px;
+    }
+    .space {
+      margin-left: 0;
+    }
+  }
+  
+  /* For large devices (laptops/desktops, 1024px and down) */
+  @media only screen and (max-width: 1024px) {
+    .profile-details {
+      padding: 18px;
+    }
+    .profile-item {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .icon-style {
+      margin-bottom: 5px;
+    }
+    .space {
+      margin-left: 0;
+    }
+  }
+  
+  /* For extra large devices (large laptops and desktops, 1440px and down) */
+  @media only screen and (max-width: 1440px) {
+    .profile-details {
+      padding: 20px;
+    }
+    .profile-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .icon-style {
+      margin-bottom: 0;
+    }
+    .space {
+      margin-left: 10px;
+    }
+  }
+  
+  /* For ultra-large devices (ultra-wide monitors, 2560px and down) */
+  @media only screen and (max-width: 2560px) {
+    .profile-details {
+      padding: 25px;
+    }
+    .profile-item {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .icon-style {
+      margin-bottom: 0;
+    }
+    .space {
+      margin-left: -145px;
+    }
+  }
+  
+
+  
   
   
