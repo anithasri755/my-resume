@@ -14,7 +14,7 @@
     text-transform: none; /* Keeps the button text as 'Edit Profile' */
     white-space: nowrap; /* Prevent text wrapping */
     line-height: 1.5; 
-    display: inline-block; 
+    display: inline-block;
   }
   
   .edit-profile-button:hover {
