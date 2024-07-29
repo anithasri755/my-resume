@@ -19,7 +19,6 @@
     align-items: flex-start;
   }
   .profile-container > div {
-    margin: 15px;
     width: auto;
   }
 }

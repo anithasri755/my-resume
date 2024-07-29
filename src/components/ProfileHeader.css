@@ -64,7 +64,7 @@
   }
 
   .header-background {
-    width: 80%;
+    width: 60%;
   }
 
   .profile-pic {
@@ -140,5 +140,26 @@
     width: 300%;
   }
 }
-  
 
+/* For screens around 1600x992 */
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+  .profile-header {
+    height: 220px;
+  }
+
+  .header-background {
+    width: 51%;
+  }
+
+  .profile-pic {
+    top: 140px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .profile-details hr {
+    width: 250%;
+  }
+}
+
+ 

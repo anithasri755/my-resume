@@ -5,7 +5,7 @@
     padding: 30px; 
     border-radius: 8px; 
     background: #fff;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 8px 16px rgba(96, 2, 2, 0.1); 
     position: relative;
     top: -206px; 
     height: 775px; 
@@ -30,121 +30,187 @@
     border-radius: 5px;
   }
 
-/* Media Queries */
+  /* Media Queries */
 
 /* For tablets and small desktops */
 @media (max-width: 1024px) {
   .recent-activities {
-    right: 40px;
-    top: -230px;
-    min-width: 300px;
+      right: 40px;
+      top: -230px;
+      min-width: 300px;
   }
 }
 
 /* For large smartphones and tablets in portrait mode */
 @media (max-width: 768px) {
   .recent-activities {
-    right: 20px;
-    top: -200px;
-    min-width: 280px;
-    padding: 20px;
+    right: 990px;
+    top: -170px;
+    min-width: 240px;
+    padding: 23px;
+    height: auto;
   }
 }
 
 /* For small smartphones */
 @media (max-width: 480px) {
   .recent-activities {
-    position: static;
-    margin: 0 auto;
-    top: 0;
-    min-width: 290%;
-    height: auto;
-    padding: 15px;
+      position: static;
+      margin: 0 auto;
+      top: 0;
+      min-width: 290%;
+      height: auto;
+      padding: 15px;
   }
 
   .recent-activities h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+      font-size: 1.2em;
+      margin-bottom: 20px;
   }
 
   .recent-activities li {
-    padding: 10px;
-    font-size: 0.9em;
+      padding: 10px;
+      font-size: 0.9em;
   }
 }
 
 /* For very small mobile devices (max-width: 600px) */
 @media only screen and (max-width: 600px) {
   .recent-activities {
-    margin: 0 auto;
-    position: relative;
-    top: -88px;
-    min-width: 70%;
-    height: auto;
-    padding: 50px;
+      margin: 0 auto;
+      position: relative;
+      top: -88px;
+      min-width: 70%;
+      height: auto;
+      padding: 50px;
   }
 
   .recent-activities h3 {
-    font-size: 1.1em;
-    margin-bottom: 15px;
+      font-size: 1.1em;
+      margin-bottom: 15px;
   }
 
   .recent-activities li {
-    padding: 10px;
-    font-size: 0.8em;
+      padding: 10px;
+      font-size: 0.8em;
   }
 }
 
 /* For macOS and Windows large screens */
 @media only screen and (min-width: 1025px) {
   .recent-activities {
-    right: 520px;
-    top: -206px;
-    min-width: 520px;
-    height: 775px;
+      right: 560px;
+      top: -206px;
+      min-width: 520px;
+      height: 775px;
+  }
+}
+
+/* For screens around 1280x802 */
+@media only screen and (min-width: 1280px) and (max-width: 1366px) {
+  .recent-activities {
+    right: 650px;
+      top: -200px;
+      min-width: 470px;
+      height: 783px;
+      padding: 25px;
+  }
+
+  .recent-activities h3 {
+      font-size: 1.4em; /* Adjusted font size */
+      margin-bottom: 25px; /* Adjusted margin */
+  }
+
+  .recent-activities li {
+      padding: 12px; /* Adjusted padding */
+      font-size: 1em; /* Adjusted font size */
+  }
+}
+
+/* For screens around 1600x992 */
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+  .recent-activities {
+    right: 558px;
+    top: -230px;
+    min-width: 670px;
+    height: 800px;
+    padding: 35px;
+  }
+
+  .recent-activities h3 {
+      font-size: 1.5em; /* Adjusted font size */
+      margin-bottom: 30px; /* Adjusted margin */
+  }
+
+  .recent-activities li {
+      padding: 14px; /* Adjusted padding */
+      font-size: 1.1em; /* Adjusted font size */
   }
 }
 
 @media only screen and (max-width: 390px) {
   .recent-activities {
-    margin: 0 auto;
-    position: relative;
-    top: -88px;
-    min-width: 90%;
-    height: auto;
-    padding: 40px;
+      margin: 0 auto;
+      position: relative;
+      top: -88px;
+      min-width: 90%;
+      height: auto;
+      padding: 40px;
   }
 
   .recent-activities h3 {
-    font-size: 1.1em;
-    margin-bottom: 15px;
+      font-size: 1.1em;
+      margin-bottom: 15px;
   }
 
   .recent-activities li {
-    padding: 10px;
-    font-size: 0.8em;
+      padding: 10px;
+      font-size: 0.8em;
   }
 }
 
 @media only screen and (max-width: 360px) {
   .recent-activities {
-    margin: 0 auto;
-    position: relative;
-    top: -88px;
-    min-width: 90%;
-    height: auto;
-    padding: 50px;
+      margin: 0 auto;
+      position: relative;
+      top: -88px;
+      min-width: 90%;
+      height: auto;
+      padding: 50px;
   }
 
   .recent-activities h3 {
-    font-size: 1.1em;
-    margin-bottom: 15px;
+      font-size: 1.1em;
+      margin-bottom: 15px;
   }
 
   .recent-activities li {
-    padding: 10px;
-    font-size: 0.8em;
+      padding: 10px;
+      font-size: 0.8em;
   }
 }
 
+/* For devices with a resolution of 320x480 */
+@media only screen and (max-width: 320px) {
+  .recent-activities {
+      margin: 0 auto;
+      position: relative;
+      top: -88px;
+      min-width: 90%;
+      height: auto;
+      padding: 30px;
+  }
+
+  .recent-activities h3 {
+      font-size: 1.1em;
+      margin-bottom: 15px;
+  }
+
+  .recent-activities li {
+      padding: 10px;
+      font-size: 0.8em;
+  }
+}
+
+  
 

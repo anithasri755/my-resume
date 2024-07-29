@@ -1,18 +1,18 @@
 .edit-profile-button {
-    margin: -35px 0px 10px 8px; /* Adjust as needed for vertical positioning */
-    padding: 10px 15px; /* Adjust padding to fit text, use same value on left and right */
+    margin: -35px 0px 10px 8px; 
+    padding: 10px 15px; 
     height: 43px;
-    width: 110px; /* Let width adjust based on content */
+    width: 110px; 
     position: relative;
-    top: 53px; /* Adjust for vertical positioning */
-    left: 320px; /* Adjust for horizontal positioning */
+    top: 53px; 
+    left: 290px;
     background-color: #007bff;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    text-transform: none; /* Keeps the button text as 'Edit Profile' */
-    white-space: nowrap; /* Prevent text wrapping */
+    text-transform: none; 
+    white-space: nowrap;
     line-height: 1.5; 
     display: inline-block;
   }
@@ -32,12 +32,12 @@
 
 @media (max-width: 768px) {
   .edit-profile-button {
-    top: 30px; /* Adjust for vertical positioning */
-    left: 100px; /* Adjust for horizontal positioning */
-    padding: 8px 12px; /* Adjust padding */
-    height: 40px; /* Adjust height */
-    width: auto; /* Allow width to adjust based on content */
-    font-size: 12px; /* Adjust font size */
+        top: 47px;
+        left: -50px;
+        padding: 8px 12px;
+        height: 36px;
+        width: auto;
+        font-size: 12px;
   }
 }
 
@@ -49,6 +49,19 @@
     height: 35px; /* Adjust height */
     width: auto; /* Allow width to adjust based on content */
     font-size: 10px; /* Adjust font size */
+  }
+}
+
+/* For 1280x802 screens */
+@media only screen and (min-width: 1280px) and (max-width: 1366px) {
+  .edit-profile-button {
+    top: 50px;
+    left: 201px;
+    padding: 10px 10px;
+    height: 40px;
+    width: auto;
+    font-size: 14px;
+      
   }
 }
   

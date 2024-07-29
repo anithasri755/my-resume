@@ -46,75 +46,104 @@
     margin-bottom: 26px;
   }
 
-
-
-/* Media Queries */
+  /* Media Queries */
 
 /* For mobile devices (phones and small tablets) */
 @media (max-width: 767px) {
   .your-activities {
-      padding: 20px;
-      right: 0;
+    padding: 27px;
+    right: 0;
   }
 
   .profile-item1 {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .profile-item1 strong {
     width: 100%;
-}
+  }
 
-.space1 {
+  .space1 {
     width: 100%;
     margin-left: 0;
-}
-
+  }
 
   .your-activities hr {
-      width: 100%;
-      margin: 20px 0;
+    width: 100%;
+    margin: 20px 0;
   }
 }
 
 /* For tablets and small desktops */
 @media (min-width: 768px) and (max-width: 1024px) {
   .your-activities {
-      padding: 50px;
-      right: 0;
+    padding: 50px;
+    right: 0;
+  }
+
+  .profile-item1 {
+    flex-direction: column;
   }
 
   .profile-item1 strong {
     width: 100%;
-}
+  }
 
-.space1 {
+  .space1 {
     width: 100%;
     margin-left: 0;
-}
-
- 
+  }
 
   .your-activities hr {
-      width: 100%;
-      margin: 30px 0;
+    width: 100%;
+    margin: 30px 0;
+  }
+}
+
+/* For 768x1024 tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .your-activities {
+    padding: 350px;
+    right: 800px;
+  }
+
+  .profile-item1 {
+    flex-direction: column;
+  }
+
+  .profile-item1 strong {
+    width: 100%;
+  }
+
+  .space1 {
+    width: 100%; 
+    text-align: left; 
+    margin-left: 160px;
+    position: relative;
+    top: -19px;
+    margin-bottom: -15px;
+  }
+
+  .your-activities hr {
+    width: 170%;
+    margin: 30px 0;
   }
 }
 
 /* For larger screens (large desktops and up) */
 @media (min-width: 1025px) {
   .your-activities {
-      padding: 370px; 
-      right: 800px; 
+    padding: 370px;
+    right: 830px;
   }
 
   .profile-item1 strong {
-      width: 170%;
+    width: 170%;
   }
 
   .your-activities hr {
-      width: 600%;
-      margin: 40px 0;
+    width: 630%;
+    margin: 40px 0;
   }
 }
 
@@ -126,24 +155,23 @@
   }
 
   .profile-item1 {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .profile-item1 strong {
     width: 100%;
-}
+  }
 
-.space1 {
+  .space1 {
     width: 100%;
     margin-left: 130px;
     position: relative;
     top: -19px;
-}
-
+  }
 
   .your-activities hr {
-      width: 150%;
-      margin: 10px 0;
+    width: 150%;
+    margin: 10px 0;
   }
 }
 
@@ -154,28 +182,30 @@
   }
 
   .profile-item1 {
-      flex-direction: column;
-      margin-bottom: 20px;
+    flex-direction: column;
+    margin-bottom: 20px;
   }
 
   .profile-item1 strong {
     width: 100%;
-    
-}
+  }
 
-.space1 {
+  .space1 {
     width: 100%;
     margin-left: 130px;
     position: relative;
     top: -19px;
-}
-
+  }
 
   .your-activities hr {
-      width: 150%;
-      margin: 10px 0;
+    width: 150%;
+    margin: 10px 0;
   }
 }
+
+
+
+
 
 
 
